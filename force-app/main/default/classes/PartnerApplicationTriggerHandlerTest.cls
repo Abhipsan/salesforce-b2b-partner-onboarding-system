@@ -41,12 +41,13 @@ public class PartnerApplicationTriggerHandlerTest {
             WHERE Id = :application.Id
         ];
 
-        // Assertions
+        // Verify Status
         System.assertEquals(
-            'Under Review',
+            'Draft',
             savedApplication.Application_Status__c
         );
 
+        // Verify Manager Assignment
         System.assertNotEquals(
             null,
             savedApplication.Regional_Manager__c

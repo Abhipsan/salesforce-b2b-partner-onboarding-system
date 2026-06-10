@@ -87,7 +87,7 @@ public class PartnerApplicationTriggerHandler {
 
         // Auto assign regional managers
         assignRegionalManagers(applications);
-    }
+    }                             
 
     public static void assignRegionalManagers(
         List<Partner_Application__c> applications

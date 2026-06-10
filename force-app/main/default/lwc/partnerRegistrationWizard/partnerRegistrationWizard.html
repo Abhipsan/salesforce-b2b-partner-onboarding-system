@@ -1,0 +1,38 @@
+<template>
+
+    <lightning-card title="Partner Registration Wizard">
+
+        <div class="slds-p-around_medium">
+
+            <lightning-input
+                label="Company Name"
+                value={companyName}
+                onchange={handleCompanyName}>
+            </lightning-input>
+
+            <lightning-input
+                label="Business Email"
+                value={businessEmail}
+                onchange={handleBusinessEmail}>
+            </lightning-input>
+
+            <lightning-combobox
+                label="Region"
+                value={region}
+                options={regionOptions}
+                onchange={handleRegionChange}>
+            </lightning-combobox>
+
+            <br/>
+
+            <lightning-button
+                label="Submit"
+                variant="brand"
+                onclick={handleSubmit}>
+            </lightning-button>
+
+        </div>
+
+    </lightning-card>
+
+</template>
